@@ -80,6 +80,8 @@ function App() {
     initDb();
   }, [initDb]);
 
+
+//Static Analysis
   useEffect(() => {
     if (!database) {
       return;
