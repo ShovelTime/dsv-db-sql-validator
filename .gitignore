@@ -10,6 +10,8 @@
 
 # production
 /build
+**/sql-static-analyzer/target/
+**/Cargo.lock
 
 # misc
 .DS_Store
