@@ -116,13 +116,13 @@
 <text text-anchor="start" x="80.63" y="-645.27" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#BEEAFF" font-weight="bold"> &#160;&#160;&#160;kurs, startdatum &#160;&#160;&#160;</text>
 <polygon fill="none" stroke="#334155" stroke-width="2" points="68.63,-622.67 68.63,-926.67 393.16,-926.67 393.16,-622.67 68.63,-622.67"/>
 </g>
-<!-- Kurstillfalle -->
-<g id="Kurstillfalle" class="node">
-<title>Kurstillfalle</title>
+<!-- Kurstillfälle -->
+<g id="Kurstillfälle" class="node">
+<title>Kurstillfälle</title>
 <ellipse fill="none" stroke="black" stroke-width="0" cx="807.94" cy="-585.67" rx="230.89" ry="259.08"/>
 <polygon fill="#3b82f6" stroke="none" points="646.67,-706.47 646.67,-766.87 969.21,-766.87 969.21,-706.47 646.67,-706.47"/>
 <polygon fill="none" stroke="#334155" points="646.67,-706.47 646.67,-766.87 969.21,-766.87 969.21,-706.47 646.67,-706.47"/>
-<text text-anchor="start" x="658.57" y="-728.07" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;Kurstillfalle &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="658.57" y="-728.07" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;Kurstillfälle &#160;&#160;&#160;&#160;&#160;&#160;</text>
 <polygon fill="#334155" stroke="none" points="646.67,-646.07 646.67,-706.47 969.21,-706.47 969.21,-646.07 646.67,-646.07"/>
 <polygon fill="none" stroke="#334155" points="646.67,-646.07 646.67,-706.47 969.21,-706.47 969.21,-646.07 646.67,-646.07"/>
 <text text-anchor="start" x="657.67" y="-667.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">kurs</text>
@@ -135,7 +135,7 @@
 <text text-anchor="start" x="876.42" y="-607.27" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#ffffff">TEXT</text>
 <polygon fill="#334155" stroke="none" points="646.67,-525.27 646.67,-585.67 969.21,-585.67 969.21,-525.27 646.67,-525.27"/>
 <polygon fill="none" stroke="#334155" points="646.67,-525.27 646.67,-585.67 969.21,-585.67 969.21,-525.27 646.67,-525.27"/>
-<text text-anchor="start" x="657.67" y="-545.87" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">larare &#160;&#160;&#160;</text>
+<text text-anchor="start" x="657.67" y="-545.87" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">lärare &#160;&#160;&#160;</text>
 <text text-anchor="start" x="876.42" y="-546.87" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#ffffff">TEXT</text>
 <polygon fill="#334155" stroke="none" points="646.67,-464.87 646.67,-525.27 969.21,-525.27 969.21,-464.87 646.67,-464.87"/>
 <polygon fill="none" stroke="#334155" points="646.67,-464.87 646.67,-525.27 969.21,-525.27 969.21,-464.87 646.67,-464.87"/>
@@ -146,10 +146,10 @@
 <text text-anchor="start" x="657.67" y="-426.07" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#BEEAFF" font-weight="bold"> &#160;&#160;&#160;kurs, startdatum &#160;&#160;&#160;</text>
 <polygon fill="none" stroke="#334155" stroke-width="2" points="645.67,-403.47 645.67,-767.87 970.21,-767.87 970.21,-403.47 645.67,-403.47"/>
 </g>
-<!-- Deltagande&#45;&gt;Kurstillfalle -->
-<!-- Deltagande&#45;&gt;Kurstillfalle -->
+<!-- Deltagande&#45;&gt;Kurstillfälle -->
+<!-- Deltagande&#45;&gt;Kurstillfälle -->
 <g id="edge4" class="edge">
-<title>Deltagande:e-&gt;Kurstillfalle:w</title>
+<title>Deltagande:e-&gt;Kurstillfälle:w</title>
 <path fill="none" stroke="#ffffff" stroke-width="3" d="M393.16,-653.87C536.84,-653.87 499.81,-448.98 631.5,-435.37"/>
 <polygon fill="#29235c" stroke="#ffffff" stroke-width="3" points="631.33,-438.89 641.14,-434.89 630.98,-431.9 631.33,-438.89"/>
 <text text-anchor="middle" x="654.57" y="-434.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
@@ -182,31 +182,31 @@
 <text text-anchor="middle" x="580.73" y="-1120.27" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
 <text text-anchor="middle" x="386.93" y="-844.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">*</text>
 </g>
-<!-- Kurstillfalle&#45;&gt;Kurs -->
-<!-- Kurstillfalle&#45;&gt;Kurs -->
+<!-- Kurstillfälle&#45;&gt;Kurs -->
+<!-- Kurstillfälle&#45;&gt;Kurs -->
 <g id="edge10" class="edge">
-<title>Kurstillfalle:e-&gt;Kurs:w</title>
+<title>Kurstillfälle:e-&gt;Kurs:w</title>
 <path fill="none" stroke="#ffffff" stroke-width="3" d="M970.21,-676.27C1159.31,-676.27 1078.9,-978.97 1254.05,-994.64"/>
 <polygon fill="#29235c" stroke="#ffffff" stroke-width="3" points="1253.89,-998.13 1264.03,-995.07 1254.19,-991.14 1253.89,-998.13"/>
 <text text-anchor="middle" x="1277.46" y="-966.47" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
 <text text-anchor="middle" x="963.98" y="-685.87" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">*</text>
 </g>
-<!-- Kurstillfalle&#45;&gt;Rum -->
-<!-- Kurstillfalle&#45;&gt;Rum -->
+<!-- Kurstillfälle&#45;&gt;Rum -->
+<!-- Kurstillfälle&#45;&gt;Rum -->
 <g id="edge6" class="edge">
-<title>Kurstillfalle:e-&gt;Rum:w</title>
+<title>Kurstillfälle:e-&gt;Rum:w</title>
 <path fill="none" stroke="#ffffff" stroke-width="3" d="M970.21,-495.07C1140.63,-495.07 1065.73,-220.13 1222.26,-204.55"/>
 <polygon fill="#29235c" stroke="#ffffff" stroke-width="3" points="1222.19,-208.06 1232.01,-204.08 1221.86,-201.07 1222.19,-208.06"/>
 <text text-anchor="middle" x="1245.45" y="-213.47" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
 <text text-anchor="middle" x="963.98" y="-504.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">*</text>
 </g>
-<!-- Larare -->
-<g id="Larare" class="node">
-<title>Larare</title>
+<!-- Lärare -->
+<g id="Lärare" class="node">
+<title>Lärare</title>
 <ellipse fill="none" stroke="black" stroke-width="0" cx="1420.17" cy="-496.67" rx="266.07" ry="130.96"/>
 <polygon fill="#3b82f6" stroke="none" points="1234.02,-526.87 1234.02,-587.27 1606.31,-587.27 1606.31,-526.87 1234.02,-526.87"/>
 <polygon fill="none" stroke="#334155" points="1234.02,-526.87 1234.02,-587.27 1606.31,-587.27 1606.31,-526.87 1234.02,-526.87"/>
-<text text-anchor="start" x="1309.01" y="-548.47" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;Larare &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="1309.01" y="-548.47" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;Lärare &#160;&#160;&#160;&#160;&#160;&#160;</text>
 <polygon fill="#334155" stroke="none" points="1234.02,-466.47 1234.02,-526.87 1606.31,-526.87 1606.31,-466.47 1234.02,-466.47"/>
 <polygon fill="none" stroke="#334155" points="1234.02,-466.47 1234.02,-526.87 1606.31,-526.87 1606.31,-466.47 1234.02,-466.47"/>
 <text text-anchor="start" x="1245.02" y="-488.07" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">personnummer</text>
@@ -214,23 +214,23 @@
 <text text-anchor="start" x="1513.52" y="-488.07" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#ffffff">TEXT</text>
 <polygon fill="#334155" stroke="none" points="1234.02,-406.07 1234.02,-466.47 1606.31,-466.47 1606.31,-406.07 1234.02,-406.07"/>
 <polygon fill="none" stroke="#334155" points="1234.02,-406.07 1234.02,-466.47 1606.31,-466.47 1606.31,-406.07 1234.02,-406.07"/>
-<text text-anchor="start" x="1245.02" y="-426.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">tjansterum &#160;&#160;&#160;</text>
+<text text-anchor="start" x="1245.02" y="-426.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">tjänsterum &#160;&#160;&#160;</text>
 <text text-anchor="start" x="1453.07" y="-427.67" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#ffffff">INTEGER</text>
 <polygon fill="none" stroke="#334155" stroke-width="2" points="1233.02,-405.07 1233.02,-588.27 1607.31,-588.27 1607.31,-405.07 1233.02,-405.07"/>
 </g>
-<!-- Kurstillfalle&#45;&gt;Larare -->
-<!-- Kurstillfalle&#45;&gt;Larare -->
+<!-- Kurstillfälle&#45;&gt;Lärare -->
+<!-- Kurstillfälle&#45;&gt;Lärare -->
 <g id="edge8" class="edge">
-<title>Kurstillfalle:e-&gt;Larare:w</title>
+<title>Kurstillfälle:e-&gt;Lärare:w</title>
 <path fill="none" stroke="#ffffff" stroke-width="3" d="M970.21,-555.47C1084.99,-555.47 1111.24,-501.39 1218.77,-496.95"/>
 <polygon fill="#29235c" stroke="#ffffff" stroke-width="3" points="1218.56,-500.46 1228.49,-496.76 1218.42,-493.46 1218.56,-500.46"/>
 <text text-anchor="middle" x="1224.13" y="-467.87" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
 <text text-anchor="middle" x="963.98" y="-565.07" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">*</text>
 </g>
-<!-- Larare&#45;&gt;Person -->
-<!-- Larare&#45;&gt;Person -->
+<!-- Lärare&#45;&gt;Person -->
+<!-- Lärare&#45;&gt;Person -->
 <g id="edge12" class="edge">
-<title>Larare:e-&gt;Person:w</title>
+<title>Lärare:e-&gt;Person:w</title>
 <path fill="none" stroke="#ffffff" stroke-width="3" d="M1607.31,-496.67C1774.96,-496.67 1637.05,-814.02 1786.81,-832.62"/>
 <polygon fill="#29235c" stroke="#ffffff" stroke-width="3" points="1786.44,-836.1 1796.63,-833.2 1786.86,-829.11 1786.44,-836.1"/>
 <text text-anchor="middle" x="1792.27" y="-804.67" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#ffffff">1</text>
