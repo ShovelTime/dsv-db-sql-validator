@@ -88,7 +88,7 @@ function App() {
         locateFile: (file) => `/dist/sql.js/${file}`,
       }
     );
-    const dataPromise = fetch("/data.sqlite").then((res) => res.arrayBuffer());
+    const dataPromise = fetch("/data.sqlite3").then((res) => res.arrayBuffer());
     const [SQL, data] = await Promise.all([sqlPromise, dataPromise]);
     const db = new SQL.Database(new Uint8Array(data));
     db.create_function("YEAR", (date: string) => new Date(date).getFullYear());

@@ -28,7 +28,7 @@ const DatabaseLayoutDialog = ({ isDarkMode }: { isDarkMode: () => boolean }) => 
     <div>
       <button
         onClick={openDialog}
-        className="max-w-4xl w-full h-[45vh] cursor-pointer border-none p-0 bg-transparent"
+        className="max-w-4xl w-full h-[45vh] border-none p-0 bg-transparent cursor-zoom-in"
         aria-label="Open Database Layout"
       >
         <img
@@ -56,7 +56,7 @@ const DatabaseLayoutDialog = ({ isDarkMode }: { isDarkMode: () => boolean }) => 
           <img
             src={isDarkMode() ? dbLayoutDark : dbLayoutLight}
             alt="Database Layout"
-            className="w-full h-full"
+            className="w-full h-full cursor-zoom-out"
           />
         </div>
       </dialog>
