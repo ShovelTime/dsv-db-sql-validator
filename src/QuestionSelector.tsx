@@ -140,6 +140,16 @@ const HighlightedSingleValue: React.FC<HighlightedSingleValueProps> = ({
   );
 };
 
+export const getQuestion = (id: number): Question | undefined => {
+  for (const category of questions) {
+    const question = category.questions.find(q => q.id === id);
+    if (question) {
+      return { ...question, category: { id: category.category_id, display_number: String(category.display_number) }, evaluable_result: { columns: question.result.columns, data: question.result.values } };
+    }
+  }
+  return undefined;
+};
+
 const QuestionSelector: React.FC<QuestionSelectorProps> = ({ onSelect, writtenQuestions, correctQuestions }) => {
   const [category, setCategory] = React.useState<number>();
   const [sequenceOptions, setSequenceOptions] = React.useState<{ value: string, label: string }[]>([]);

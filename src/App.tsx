@@ -41,6 +41,7 @@ import ThemeToggle from "./ThemeToggle";
 import useTheme from "./useTheme";
 import { isCorrectResult, Result } from "./utils";
 import DatabaseLayoutDialog from "./DatabaseLayoutDialog";
+import ExportSelectorModal, { ExportSelectorModalHandle } from "./ExportSelectorModal";
 
 const DEFAULT_QUERY = "SELECT * FROM student;";
 
@@ -68,6 +69,7 @@ function App() {
   const exportRendererRef = useRef<HTMLDivElement>(null);
 
   const editorRef = useRef<Editor>(null);
+  const exportModalRef = useRef<ExportSelectorModalHandle>(null);
 
   // QuestionSelector needs writtenQuestions and correctQuestions to be able to display the correct state
   const [writtenQuestions, setWrittenQuestions] = useState<number[]>(localStorage.getItem("writtenQuestions") ? JSON.parse(localStorage.getItem("writtenQuestions")!) : []);
@@ -336,7 +338,7 @@ function App() {
     setCorrectQueryMismatch(currentQuery !== correctQueryFormatted);
   }, [database, question, query]);
 
-  const exportData = useCallback(() => {
+  const exportData = useCallback((options?: { include?: number[]}) => {
     if (!database) {
       return;
     }
@@ -360,7 +362,7 @@ function App() {
     output += "/* --- BEGIN Submission Summary --- */\n";
     const writtenQueries = localStorage.getItem("correctQuestions") || "[]";
     const parsed = JSON.parse(writtenQueries) as number[];
-    const questionsString = parsed.map((id) => {
+    const questionsString = parsed.filter((id) => options === undefined || (options.include && options.include.includes(id))).map((id) => {
       const category = questions.find(c => c.questions.some(q => q.id === id))!;
       const question = category.questions.find(q => q.id === id)!;
       return { formatted: `${category.display_number}${question.display_sequence}`, number: category.display_number, sequence: question.display_sequence };
@@ -390,7 +392,7 @@ function App() {
     const queries = localStorage.getItem("correctQuestions");
     if (queries) {
       const parsed = JSON.parse(queries) as number[];
-      const sorted = parsed.map((id) => {
+      const sorted = parsed.filter((id) => options === undefined || (options.include && options.include.includes(id))).map((id) => {
         const category = questions.find(c => c.questions.some(q => q.id === id))!;
         const question = category.questions.find(q => q.id === id)!;
         return { category, question };
@@ -466,7 +468,10 @@ function App() {
     output += "/* --- END Correct Raw Queries --- */\n";
     output += "/* --- BEGIN Raw List Dumps --- */\n";
     output += "-- " + (localStorage.getItem("writtenQuestions") === null ? "[]" : localStorage.getItem("writtenQuestions")) + "\n";
-    output += "-- " + (localStorage.getItem("correctQuestions") === null ? "[]" : localStorage.getItem("correctQuestions")) + "\n";
+    output += "-- " + (localStorage.getItem("correctQuestions") === null ? "[]" : 
+      JSON.stringify((JSON.parse(localStorage.getItem("correctQuestions")!) as number[])
+        .filter((id) => options === undefined || (options.include && options.include.includes(id))))
+    ) + "\n";
     output += "/* --- END Raw List Dumps --- */\n";
 
     output += "/* --- END Validation --- */\n";
@@ -757,7 +762,8 @@ function App() {
             }} className='bg-red-500 hover:bg-red-700 text-white text-xl font-semibold py-2 px-4 mt-4 rounded mr-3 w-40' type='submit'>Reset DB</button>
           */}
           <button onClick={exportImageQuery} className="bg-green-500 hover:bg-green-700 disabled:bg-green-400 disabled:opacity-50 text-white text-xl font-semibold py-2 px-4 mt-4 rounded mr-3 w-40" type="submit" disabled={!loadedQuestionCorrect}>Export PNG</button>
-          <button onClick={exportData} className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-semibold py-2 px-4 mt-4 rounded mr-3 w-40" type="submit">Export Data</button>
+          <button onClick={() => exportModalRef.current?.openDialog()} className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-semibold py-2 px-4 mt-4 rounded mr-3 w-40" type="submit">Export Data</button>
+          <ExportSelectorModal correctQuestions={correctQuestions} onExport={(include) => exportData({include})} ref={exportModalRef} />
           <button onClick={importData} className="bg-blue-500 hover:bg-blue-700 text-white text-xl font-semibold py-2 px-4 mt-4 rounded mr-3 w-40" type="submit">Import Data</button>
         </div>
 
