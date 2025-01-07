@@ -87,7 +87,7 @@ const ExportSelectorModal = forwardRef<ExportSelectorModalHandle, ExportSelector
               }}
               className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-semibold py-2 px-4 mt-3.5 rounded mr-3 w-44"
             >
-              Export Selected
+              Export {includeAll ? "All" : "Selected"}
             </button>
             <button 
               onClick={closeDialog} 
