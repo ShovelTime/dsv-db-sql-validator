@@ -35,9 +35,10 @@ module.exports = {
           test: /\.wasm$/,
           type: 'javascript/auto',
         });
-  
-        return webpackConfig;
-      },
+    
+      return webpackConfig;
     },
-  };
+
+  },
+};
   
